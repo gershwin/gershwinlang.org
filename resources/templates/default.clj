@@ -12,7 +12,7 @@
                  "Gershwin: Stack-based, Concatenative Clojure")
     :name "description"}]
   [:meta {:name "keywords", :content (or (:tags metadata)
-                                         "Gershwin Clojure Factor concatenative stack-based")}]
+                                         "Gershwin programming language Clojure Factor concatenative stack-based")}]
   ;;[:meta {:content "Daniel Gregoire", :name "author"}]
   "<!--[if lt IE 9]>\n      <script src=\"http://html5shim.googlecode.com/svn/trunk/html5.js\"></script>\n    <![endif]-->"
   [:link
