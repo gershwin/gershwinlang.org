@@ -1,0 +1,44 @@
+hr {
+    border-top-color: #cccccc;
+}
+
+.brand a {
+    color: white;
+}
+
+.btn-enormous {
+    padding: 25px 65px;
+    font-size: 26px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+a[disabled],
+.dropdown-menu > li > a[disabled] {
+    color: #bbbbbb;
+    cursor: default;
+}
+
+/* .subhead > div:first-child { */
+/*     min-height: 160px; */
+/* } */
+
+img#logo {
+    width: 100px;
+    float: left;
+    margin-right: 12px;
+}
+
+img#mini-logo {
+    width: 20px;
+    margin-top: -10px;
+}
+
+#next-steps {
+    margin-top: 30px;
+}
+
+#next-steps .btn-enormous {
+    width: 210px;
+}

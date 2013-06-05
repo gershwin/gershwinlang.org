@@ -1,0 +1,3 @@
+#!/bin/bash
+
+java -jar ~/opt/static-app.jar --build && cp -R output/* ../website-pages && cp pages_gitignore ../website-pages/.gitignore && cp README.md ../website-pages/README.md

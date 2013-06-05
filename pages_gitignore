@@ -1,0 +1,6 @@
+*.less
+**/bootstrap/css/bootstrap-responsive.css
+**/bootstrap/css/bootstrap.css
+**/css/font-awesome-ie7.css
+**/css/font-awesome.css
+**/bootstrap/bootstrap.js
