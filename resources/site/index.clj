@@ -13,7 +13,7 @@
       [:a {:disabled "disabled" :href "javascript:void(0)"}
        "Stable Release"]]
      [:li
-      [:a {:href "http://sourceforge.net/projects/gershwin/files/0.2.0/gershwin-0.2.0-master-SNAPSHOT.jar/download"}
+      [:a {:href (get-in (static.config/config) [:gershwin :urls :development-release])}
        "Development Release"]]]]]]
  [:div#next-steps
   [:div.row

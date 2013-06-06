@@ -58,10 +58,10 @@
         [:ul.dropdown-menu
          [:li
           [:a {:disabled "disabled" :href "javascript:void(0)"}
-           "Stable"]]
+           "Stable Release"]]
          [:li
-          [:a {:target "_blank" :href "http://sourceforge.net/projects/gershwin/files/0.2.0/gershwin-0.2.0-master-SNAPSHOT.jar/download"}
-           "Development"]]]]]
+          [:a {:target "_blank" :href (get-in (static.config/config) [:gershwin :urls :development-release])}
+           "Development Release"]]]]]
       [:ul#main-menu-right.nav.pull-right
        [:li
         [:a
@@ -69,8 +69,8 @@
           :href "https://github.com/gershwin/gershwin",
           :target "_blank",
           :rel "tooltip"}
-         "Project on Github "
-         [:i.icon-share-alt]]]]]]]]
+         [:i.icon-large.icon-github]
+         " Project on Github"]]]]]]]
   [:div.container
    "<!-- Masthead\n================================================== -->"
    [:header#overview.jumbotron.subhead
@@ -99,17 +99,17 @@
              [:a {:disabled "disabled" :href "javascript:void(0)"}
               "Stable Release"]]
             [:li
-             [:a {:href "http://sourceforge.net/projects/gershwin/files/0.2.0/gershwin-0.2.0-master-SNAPSHOT.jar/download"}
+             [:a {:href (get-in (static.config/config) [:gershwin :urls :development-release])}
               "Development Release"]]]])]]
       (when (= (:type metadata) :post)
         [:div.row
          [:br]
          [:br]
          [:div.span8
-          [:p [:i.icon-large.icon-quote-left] " Have feedback? Start a conversation with "
+          [:p [:i.icon-large.icon-comments] " Have feedback? Start a conversation with "
            [:a {:href "https://twitter.com/gershwinlang"}
             "@gershwinlang"]
-           " on Twitter. " [:i.icon-large.icon-quote-right]]]])])
+           " on Twitter."]]])])
    [:br]
    [:br]
    [:br]
@@ -118,32 +118,43 @@
    [:footer#footer
     [:p.pull-right [:a {:href "#top"} "Back to top"]]
     [:div.links
+     [:p
+      [:a
+       {:href "https://github.com/gershwin/gershwin"}
+       [:i.icon-large.icon-github]
+       " Source Repository"]
+      [:a {:href "/documentation.html"}
+       [:i.icon-book]
+       " Documentation"]
+      [:a
+       {:href "https://github.com/gershwin/gershwin/issues"}
+       [:i.icon-tasks]
+       " Issues/Bugs"]]
+     [:p
+      [:a {:href "/rss-feed"}
+       [:i.icon-rss]
+       " RSS Feed"]
+      [:a {:href "https://twitter.com/gershwinlang"}
+       [:i.icon-twitter]
+       " @gershwinlang"]]]
+    [:p
+     "Web design created by "
+     [:a {:href "http://thomaspark.me"} "Thomas Park"]
+     ".\n        Web design code licensed under the "
      [:a
-      {:href "https://github.com/gershwin/gershwin"}
-      "Source Repository"]
-     [:a {:href "/documentation.html"} "Documentation"]
+      {:href "http://www.apache.org/licenses/LICENSE-2.0"}
+      "Apache License v2.0"]
+     "."
+     [:br]
+     "\n        Web design based on "
+     [:a {:href "http://twitter.github.com/bootstrap/"} "Bootstrap"]
+     ". Icons from "
      [:a
-      {:href "https://github.com/gershwin/gershwin/issues"}
-      "Issues/Bugs"]
-     [:a {:href "https://twitter.com/gershwinlang"}
-      "@gershwinlang on " [:i.icon-twitter]]]
-    "\n        Web design created by "
-    [:a {:href "http://thomaspark.me"} "Thomas Park"]
-    ".\n        Web design code licensed under the "
-    [:a
-     {:href "http://www.apache.org/licenses/LICENSE-2.0"}
-     "Apache License v2.0"]
-    "."
-    [:br]
-    "\n        Web design based on "
-    [:a {:href "http://twitter.github.com/bootstrap/"} "Bootstrap"]
-    ". Icons from "
-    [:a
-     {:href "http://fortawesome.github.com/Font-Awesome/"}
-     "Font Awesome"]
-    ". Web fonts from "
-    [:a {:href "http://www.google.com/webfonts"} "Google"]
-    ". Logo by Daniel Gregoire."
+      {:href "http://fortawesome.github.com/Font-Awesome/"}
+      "Font Awesome"]
+     ". Web fonts from "
+     [:a {:href "http://www.google.com/webfonts"} "Google"]
+     ". Logo by Daniel Gregoire."]
     [:br]]]
   "<!-- /container -->"
   "<!-- Le javascript\n    ================================================== -->"

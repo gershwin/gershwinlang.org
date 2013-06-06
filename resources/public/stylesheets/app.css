@@ -42,3 +42,7 @@ img#mini-logo {
 #next-steps .btn-enormous {
     width: 210px;
 }
+
+#footer .links i.separator {
+    margin-right: 10px;
+}
