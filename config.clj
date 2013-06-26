@@ -8,7 +8,7 @@
  :blog-as-index false
  :create-archives false
  :atomic-build true
- :gershwin {:urls {:development-release "http://sourceforge.net/projects/gershwin/files/0.2.0/gershwin-0.2.0-master-a58c0a3f.jar/download"}}
+ :gershwin {:urls {:development-release "http://sourceforge.net/projects/gershwin/files/0.2.0/gershwin-0.2.0-master-406ec77.jar/download"}}
  ;; :emacs "/home/semperos/opt/emacs/bin/emacs"
  ;; :emacs-eval ['(add-to-list 'load-path "/usr/share/org-mode/lisp/")
  ;;              '(add-to-list 'load-path "~/Dropbox/code/emacs/ext/clojure-mode/")
