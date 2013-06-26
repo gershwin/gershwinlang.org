@@ -22,7 +22,7 @@ You can start a bare-bones Gershwin REPL much like a Clojure one. [Download the 
 java -cp gershwin.jar gershwin.main
 ```
 
-If you start the REPL in this way, use tools like [rlwrap](), [ledit](), or Emacs' inferior Lisp support for a richer editing experience.
+If you start the REPL in this way, use tools like [rlwrap](http://linux.die.net/man/1/rlwrap), [ledit](http://pauillac.inria.fr/~ddr/ledit/), or Emacs' inferior Lisp support for a richer editing experience.
 
 A more feature-rich alternative that also presents more of a learning curve is nREPL. For those familiar with Clojure's nREPL, a Gershwin-compatible version of tools.nrepl is available ([code](https://github.com/gershwin/tools.nrepl), [JAR download](https://sourceforge.net/projects/gershwin/files/tools.nrepl/?)). You can start the nREPL server by including the JAR on your classpath and then invoking it as follows (taken from the [tools.nrepl README](https://github.com/clojure/tools.nrepl/blob/master/README.md)):
 
@@ -33,7 +33,7 @@ A more feature-rich alternative that also presents more of a learning curve is n
 ;; (stop-server server)
 ```
 
-At this point, you can connect with the nREPL client of your choosing, to include [nrepl.el](https://github.com/kingtim/nrepl.el) for Emacs, [foreplay.vim]() for Vim, [Reply](https://github.com/trptcolin/reply/) (what Leiningen 2 uses for `lein repl`), and [Counterclockwise](http://code.google.com/p/counterclockwise/) for Eclipse.
+At this point, you can connect with the nREPL client of your choosing, to include [nrepl.el](https://github.com/kingtim/nrepl.el) for Emacs, [foreplay.vim](https://github.com/tpope/vim-foreplay) for Vim, [Reply](https://github.com/trptcolin/reply/) (what Leiningen 2 uses for `lein repl`), and [Counterclockwise](http://code.google.com/p/counterclockwise/) for Eclipse.
 
 ### Hello, World ###
 
