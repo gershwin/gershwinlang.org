@@ -51,17 +51,8 @@
        ;; [:li [:a {:href "/getting-started.html"} "Getting Started"]]
        ;; [:li [:a {:href "/examples.html"} "Examples"]]
        [:li [:a {:href "/documentation.html"} "Documentation"]]
-       [:li#download-menu.dropdown
-        [:a.dropdown-toggle {:data-toggle "dropdown"
-                             :href "#"}
-         "Download " [:b.caret]]
-        [:ul.dropdown-menu
-         [:li
-          [:a {:disabled "disabled" :href "javascript:void(0)"}
-           "Stable Release"]]
-         [:li
-          [:a {:target "_blank" :href (get-in (static.config/config) [:gershwin :urls :development-release])}
-           "Development Release"]]]]]
+       [:li [:a {:href "https://clojars.org/org.gershwinlang/gershwin"}
+             "Download"]]]
       [:ul#main-menu-right.nav.pull-right
        [:li
         [:a

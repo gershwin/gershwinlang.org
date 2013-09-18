@@ -7,15 +7,8 @@
   [:div.span4
    [:div.well
     [:h3
-     [:i.icon-download " Download"]]
-    [:ul
-     [:li
-      [:a {:disabled "disabled" :href "javascript:void(0)"}
-       "Stable Release"]]
-     [:li
-      [:a {:href (get-in (static.config/config) [:gershwin :urls :development-release])}
-       "Development Release"]]]]]]
- [:div#next-steps
+     [:i.icon-download [:a {:href "https://clojars.org/org.gershwinlang/gershwin"} " Download"]]]]]]
+  [:div#next-steps
   [:div.row
    [:div.span4
     [:a.btn.btn-enormous.btn-info {:href "/getting-started.html"}
