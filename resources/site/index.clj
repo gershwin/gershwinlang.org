@@ -7,7 +7,8 @@
   [:div.span4
    [:div.well
     [:h3
-     [:i.icon-download [:a {:href "https://clojars.org/org.gershwinlang/gershwin"} " Download"]]]]]]
+     [:a {:href "https://clojars.org/org.gershwinlang/gershwin"}
+      [:i.icon-download " Download"]]]]]]
   [:div#next-steps
   [:div.row
    [:div.span4
