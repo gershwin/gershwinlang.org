@@ -2,4 +2,4 @@
 
 PAGES=../website-pages
 
-java -jar ~/opt/static-app.jar --build && cp -R output/* $PAGES && cp pages_gitignore $PAGES/.gitignore && cp pages_CNAME $PAGES/CNAME && cp README.md $PAGES/README.md
+java -jar ~/opt/static-app.jar --build && cp -R output/* $PAGES && cp pages_gitignore $PAGES/.gitignore && cp README.md $PAGES/README.md
